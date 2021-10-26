@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="app">
+        <div v-if="showImage" @click="changeImage" class="">
+            <img src="bulb-on.jpg" alt="">
+
+        </div>
+        <div v-else @click="changeImage">
+            <img src="bulb-off.jpg" alt="">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="vue.js"></script>
+</body>
+</html>
